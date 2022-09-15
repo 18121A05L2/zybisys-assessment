@@ -2,7 +2,6 @@ import React from "react";
 import { useRouter } from "next/router";
 
 function AnimeName({ item }) {
-  console.log(item);
   const {
     title,
     episodes,
@@ -19,8 +18,6 @@ function AnimeName({ item }) {
   const aired = item.aired.string;
   const synopsis = item.synopsis;
   const image = item.images.jpg.large_image_url;
-
-  console.log(item);
 
   return (
     <div>
@@ -63,26 +60,3 @@ export async function getServerSideProps(context) {
     },
   };
 }
-
-// export function getStaticPaths() {
-//   return {
-//     Paths: [
-//       {
-//         params: { anime_name: "1" },
-//           },
-//       ],
-//       fallback : false,
-//   };
-// }
-
-// export async function getStaticProps() {
-//   const res = await fetch("https://api.jikan.moe/v4/anime");
-//   const data = await res.json();
-//   // console.log("❤️‍🔥 fetch data" + data);
-
-//   return {
-//     props: {
-//       data: data.data,
-//     },
-//   };
-// }
