@@ -29,11 +29,11 @@ function Watchlist() {
   console.log(items)
 
   return (
-    <div>
-      Watchlist
+    <div className="grid grid-cols-3 pt-[8rem] p-8">
+      
       {items.map((item) => {
         for (let key in item) {
-          console.log(key);
+          console.log(item[key]);
           return <Card item={item[key]} key={uuidv4()} />;
         }
       })}

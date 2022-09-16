@@ -10,7 +10,7 @@ const Home = ({ data }) => {
   const watchlistOpen = router.query.watchlist;
   // console.log(data)
   return (
-    <div className="overflow-hidden w-full h-full min-h-screen">
+    <div className="overflow-hidden w-full h-full min-h-screen bg-slate-500">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />

@@ -20,7 +20,7 @@ function AnimeName({ item }) {
   const image = item.images.jpg.large_image_url;
 
   return (
-    <div>
+    <div >
       AnimeName
       {/* synopsis, characters, episodes, aired date, trailer */}
       <iframe width={500} height={500} src={trailerUrl}></iframe>

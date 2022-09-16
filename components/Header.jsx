@@ -23,7 +23,7 @@ export default function Header() {
     // item.map((a) => {
     //   console.log(a);
     // });
-    setItems([...items, JSON.parse(item)]);
+    setItems([...items, { [JSON.parse(item).mal_id]: JSON.parse(item) }]);
   }
 
   return (
@@ -41,7 +41,7 @@ export default function Header() {
               droppable="true"
               onDragOver={draggingOver}
               onDrop={dragDropped}
-              className="icon"
+              className="icon w-[4rem] h-[3rem] animate-bounce "
             />
           </a>
         </Link>

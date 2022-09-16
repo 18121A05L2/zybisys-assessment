@@ -15,8 +15,8 @@ function Card({ item }) {
   let isThisItemInWatchlist = Boolean(
     watchListItems.filter((a) => a.hasOwnProperty(String(item.mal_id))).length
   );
-  console.log(watchListItems);
-  console.log("isItemInWatchlist: ✅✅✅✅" + isThisItemInWatchlist);
+  // console.log(watchListItems);
+  // console.log("isItemInWatchlist: ✅✅✅✅" + isThisItemInWatchlist);
 
   function handleDragStart(e) {
     console.log("drag Started");
@@ -36,6 +36,9 @@ function Card({ item }) {
         );
         console.log("deleting index : " + index);
         ret.splice(Number(index), 1);
+        if (index == 0) {
+          localStorage.setItem("watchlist",JSON.stringify([]))
+        }
         return ret;
       });
       console.log("unwatchlisted");
