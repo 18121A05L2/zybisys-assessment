@@ -1,4 +1,6 @@
-In this i have mostly focused on functionality , so bare with me in design
+In this i have mostly focused on functionality , if u want to se mu ui skills check my othe repos , so bare with me in this design
+
+--> check out web app here : https://zybisys-assessment.vercel.app/
 
 -----------   FUNCTIONALITIES   -----------------------
 
